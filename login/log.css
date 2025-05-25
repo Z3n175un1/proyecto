@@ -1,0 +1,325 @@
+  .menu-opciones {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    z-index: 999;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  }
+
+    /*WALLPAPER PARA EL FONDO DE INICIO DE SESSION */
+
+  .t{
+      background-image: url("fondo.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+  }
+
+  .menu-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .menu-contenido {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  .menu-contenido a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .menu-contenido a:hover {
+    background-color: #ddd;
+  }
+
+  .menu-opciones:hover .menu-contenido {
+    display: block;
+  }
+
+
+
+
+  /* Variables para colores y sombras para mantener consistencia */
+  :root {
+    --primary-color: #115DFC;
+    --primary-hover: #0A4CD9;
+    --text-dark: #212121;
+    --text-light: #8B8E98;
+    --background-light: #F8F8F8;
+    --border-color: #E5E5E5;
+    --white: #ffffff;
+    --box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-light);
+    min-height: 100vh;
+  }
+
+  .t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-light);
+  }
+
+  .form_container {
+    width: 380px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    margin: 20px auto;
+  }
+
+  .form_container:hover {
+    transform: translateY(-5px);
+  }
+
+  .logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(248, 248, 248, 0) 50%, rgba(248, 248, 248, 0.5) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+  }
+
+  .title_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.4;
+    color: var(--text-light);
+    margin: 0;
+    display: block;
+  }
+
+  .input_container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    color: var(--text-light);
+    pointer-events: none;
+  }
+
+  .input_label {
+    font-size: 0.875rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .input_field {
+    width: 100%;
+    height: 48px;
+    padding: 0 45px 0 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+  }
+
+  .input_field:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(17, 93, 252, 0.15);
+  }
+
+  .input_field::placeholder {
+    color: #B0B0B0;
+  }
+
+  .sign-in_btn {
+    width: 100%;
+    height: 48px;
+    border: none;
+    background: var(--primary-color);
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sign-in_btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(10, 76, 217, 0.2);
+  }
+
+  .sign-in_btn:active {
+    transform: translateY(0);
+  }
+
+  .separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+  }
+
+  .separator .line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--border-color);
+    border: none;
+  }
+
+  .separator span {
+    color: var(--text-light);
+    font-size: 0.875rem;
+  }
+
+  .sign-in_ggl, .sign-in_apl {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .sign-in_ggl {
+    background: var(--white);
+    color: var(--text-dark);
+    border: 1.5px solid var(--border-color);
+  }
+
+  .sign-in_ggl:hover {
+    background-color: #F5F5F5;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .sign-in_apl {
+    background: var(--text-dark);
+    color: var(--white);
+    border: none;
+  }
+
+  .sign-in_apl:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .note {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .note:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+
+  /* Mejoras adicionales para los campos de input */
+  .input_field:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(17, 93, 252, 0.15);
+  }
+
+  .input_field::placeholder {
+    color: #B0B0B0;
+  }
+
+  /* Estilo para SVGs dentro de botones */
+  button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Responsive ajustes */
+  @media (max-width: 480px) {
+    .form_container {
+      padding: 30px 20px;
+    }
+    
+    .title {
+      font-size: 1.3rem;
+    }
+    
+    .input_field {
+      height: 44px;
+    }
+    
+    .sign-in_btn,
+    .sign-in_ggl,
+    .sign-in_apl {
+      height: 44px;
+    }
+  }
+
