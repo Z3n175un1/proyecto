@@ -4,16 +4,17 @@ include "login/conn.php";
 // Conexión
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 if (!$conn) {
-    die("Error en la conexión a la base de datos.");
+    die("❌ Error en la conexión a la base de datos.");
 }
 
 // Consulta
 $sql = "SELECT item_id, numero_item, cantidad_items, nombre_producto, categoria, precio, preciobs FROM proyecto.items ORDER BY item_id";
 $result = pg_query($conn, $sql);
 if (!$result) {
-    die("Error en la consulta.");
+    die("❌ Error en la consulta: " . pg_last_error($conn));
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -447,8 +448,8 @@ if (!$result) {
     <a href="../index.html" class="logo">K<span>M</span></a>
     
     <div class="nav-links">
-      <a href="../proyecto/index.html">Inicio</a>
-      <a href="../proyecto/tienda.php" class="active">Productos</a>
+      <a href="index.html">Inicio</a>
+      <a href="/logout/tienda/tienda.php" class="active">Productos</a>
       <a href="servicios.html">Servicios</a>
       <a href="#">Nosotros</a>
       <a href="#">Contacto</a>
