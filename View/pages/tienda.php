@@ -1,5 +1,5 @@
 <?php 
-include "login/conn.php"; 
+include "../../controller/config.php"; 
 
 // Conexión
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
