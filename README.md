@@ -1,5 +1,4 @@
-# This is a little job i've had, so it's my first time i submmit on github
-# if you like it comment or tell me what could i change in the doc
+# This is a little job i've had, so it's my first time i submmit on github, if you like it comment or tell me what could i change in the doc
 
 # 🧀 Proyecto Web Quesáceo - by DAVE EL MAGO DEL QUESO MÁGICO (a.k.a. Zentsuni)
 
@@ -15,18 +14,6 @@ Este proyecto fue moldeado bajo la guía del mago del queso mágico para que ten
 - `/core/` → Aquí viven las clases base, helpers y funciones compartidas.
 - `/modules/` → Módulos reutilizables o componentes independientes del sistema.
 - `/public/` → Carpeta pública accesible desde el navegador.  
-  **⚠️ Obligatorio tener `index.php` o `index.html` aquí como punto de entrada del sitio.**
-- `/styles/` → 🚨 Se recomienda mover a `/public/styles/` o `/public/css/` para mantener buenas prácticas de frontend.
-- `/test/` → 🚨 Se recomienda mover fuera de `/` o renombrar como `/tests/` para separar el entorno de pruebas del entorno productivo.
-
----
-
-## ⚠️ Recomendaciones Mágicas
-
-- **`index.php` o `index.html` es obligatorio** dentro de la carpeta `/public/`, ya que representa el inicio del hechizo web.
-- No expongas carpetas sensibles como `/config/` o `/test/` al público. Usa `.htaccess` o configuraciones del servidor para protegerlas.
-- Para entornos Apache, el `.htaccess` debe redirigir correctamente a `/public/`.
-
 ---
 
 ## 🧙‍♂️ Legado del Mago
