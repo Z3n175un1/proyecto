@@ -1,4 +1,4 @@
-# This is a little job i've had, so it's my firs time i submmit on github
+# This is a little job i've had, so it's my first time i submmit on github
 # if you like it comment or tell me what could i change in the doc
 
 # 🧀 Proyecto Web Quesáceo - by DAVE EL MAGO DEL QUESO MÁGICO (a.k.a. Zentsuni)
@@ -39,4 +39,7 @@ Este proyecto nace de la pasión por crear estructuras sólidas, mantener orden 
 ---
 
 **Powered with sabiduría quesácea™.[by Z3N175UNI]**
+<<<<<<< HEAD
 
+=======
+>>>>>>> d04a86e7975e3a92f6cb54a8f50840ce0e95e1f1

@@ -1,7 +1,7 @@
 <?php
 session_start(); // Iniciar sesión
 
-include("conn.php");
+include("../config/conn.php");
 
 $idusuario = $_POST['idusuario'] ?? '';
 $contra = $_POST['contra'] ?? '';
@@ -16,7 +16,7 @@ if ($idusuario && $contra) {
         $_SESSION['idusuario'] = $idusuario;
 
         // Redirigir a la página principal
-        header("Location: ../Logout/index.php"); // Asegúrate de que esta ruta esté bien
+        header("Location: ../public/index.php"); // Asegúrate de que esta ruta esté bien
         exit();
     } else {
         echo "<p style='color:red;'>Usuario o contraseña incorrectos</p>";

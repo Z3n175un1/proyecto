@@ -1,5 +1,5 @@
 <<?php
-include "../login/conn.php";
+include "../config/conn.php";
 session_start();
 $usuario = $_SESSION['idusuario'] ?? 'Invitado';
 ?>
@@ -988,7 +988,7 @@ $usuario = $_SESSION['idusuario'] ?? 'Invitado';
     
     <div class="nav-links">
       <a href="index.php">Inicio</a>
-      <a href="tienda/tienda.php">Productos</a>
+      <a href="tienda.php">Productos</a>
       <a href="servicios.php" class="active">Servicios</a>
       <a href="#">Nosotros</a>
       <a href="#">Contacto</a>

@@ -1,5 +1,5 @@
 <?php
-include "../login/conn.php";
+include "../config/conn.php";
 session_start();
 $usuario = $_SESSION['idusuario'] ?? 'Invitado';
 ?>
@@ -11,7 +11,7 @@ $usuario = $_SESSION['idusuario'] ?? 'Invitado';
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="KM - Electrónica, accesorios y computadoras de alta calidad con la mejor atención personalizada del mercado">
   <title>KM | Tecnología e Innovación</title>
-  <link rel="icon" href="../K.png" type="image/x-icon">
+  <link rel="icon" href="../assets/icons/login.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
@@ -641,16 +641,16 @@ $usuario = $_SESSION['idusuario'] ?? 'Invitado';
     
     <div class="nav-links">
       <a href="index.php">Inicio</a>
-      <a href="../Logout/tienda/tienda.php">Productos</a>
+      <a href="tienda.php">Productos</a>
       <a href="servicios.php">Servicios</a>
       <a href="#">Nosotros</a>
-      <a href="#">Contacto</a>
+      <a href="FAQ.html">Contacto</a>
     </div>
     
     <div class="header-actions">
       <div class="user-icon">
   <span>Hola, <b><?php echo htmlspecialchars($usuario); ?></b></span>
-<a href="logout.php" style="color:black;" title="Cerrar sesión">
+<a href="../Controller/logout.php" style="color:black;" title="Cerrar sesión">
   <i class="fas fa-user"></i>
 </a>
       </div>

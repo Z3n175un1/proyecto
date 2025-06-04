@@ -10,7 +10,7 @@
     /*WALLPAPER PARA EL FONDO DE INICIO DE SESSION */
 
   .t{
-      background-image: url("fondo.gif");
+      background-image: url("../assets/icons/fondo.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

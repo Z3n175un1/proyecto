@@ -1,6 +1,6 @@
 <?php
 session_start();
 session_destroy();
-header("Location: ../Model/index.html");
+header("Location: ../view/pages/index.html");
 exit();
 ?>
